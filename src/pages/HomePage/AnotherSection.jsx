@@ -5,13 +5,13 @@ import PosMachine from "../../assets/posMachine.png";
 
 const AnotherSection = () => {
 	return (
-		<Box px="20" my="1rem">
+		<Box px="20" my="1rem" mb="10" d="block">
 			<Box
 				display="flex"
 				justifyContent="space-center"
 				alignItems="center"
 				style={{ borderRadius: "10px" }}
-				px="10px"
+				p="10"
 				rounded="sm"
 				shadow="base"
 				bg="white"
@@ -19,11 +19,11 @@ const AnotherSection = () => {
 				
 				borderColor="gray.300"
 			>
-				<Box width="47%">
+				<Box width="45%">
 					<h1 style={{ color: "#253d95", fontSize: 25 }}>
 						Recharge card printing
 					</h1>
-					<p style={{ marginTop: 15, letterSpacing: 1 }}>
+					<p style={{ marginTop: 15}}>
 						Get recharge card pins at discounted prices and Start your own
 						recharge card printing business today.
 					</p>

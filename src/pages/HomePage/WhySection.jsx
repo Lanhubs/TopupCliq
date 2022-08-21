@@ -36,7 +36,7 @@ const WhySection = () => {
 						bg="white"
 					>
 						<img src={item.image} style={{ width: "100%", marginTop: 0 }} />
-						<Box p="15px" display="block">
+						<Box p="15px" style={{display: "flex"||"-ms-flexbox", flexDirection: "column", justifyContent:"space-between"}}>
 							<h2
 								style={{
 									fontSize: 20,

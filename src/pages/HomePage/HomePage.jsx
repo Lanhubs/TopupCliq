@@ -6,6 +6,7 @@ import AnotherSection from "./AnotherSection";
 import Intro from "./Intro";
 import LearnMoreSection from "./LearnMoreSection";
 import Partners from "./Partners";
+import Testimonialsection from "./Testimonialsection";
 import WhySection from "./WhySection";
 const HomePage = () => {
 	return (
@@ -19,6 +20,7 @@ const HomePage = () => {
 			<WhySection/>
 			<AnotherSection/>
 			<LearnMoreSection/>
+			<Testimonialsection/>
 			</VStack>
 
 		</Box>

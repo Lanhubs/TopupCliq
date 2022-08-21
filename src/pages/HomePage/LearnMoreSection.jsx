@@ -5,23 +5,39 @@ import rocketIcon from "../../assets/learmmore/rocket.png";
 import topupIcon from "../../assets/learmmore/topup_logo.png";
 const LearnMoreSection = () => {
 	return (
-		<Box mt="20px" w="full">
+		<Box my="1rem" w="full" py="10" bg="white" d="block">
 			<Flex>
 				{content.map((item, i) => (
 					<Box
 						key={i}
-						px="1.7rem"
-						d="flex"
-						flexDirection={"column"}
-						justifyContent="center"
-                        textAlign="center"
-                        style={{border: "0.1rem solid "}} borderColor="gray.200"
+						p="1.5rem 2rem"
+						textAlign="center"
+						style={{
+							border: "0.1rem solid rgb(153, 149, 149)",
+							width: "100%",
+							display: "flex",
+							justifyContent: "space-between",
+							flexDirection: "column",
+							gap: "1em",
+						}}
+						borderColor="GrayText"
 					>
-						<img src={item.icon} style={{margin: "10px auto"}} />
-						<p>{item.desc}</p>
-                        <Link href="#" mx="auto" w={"fit-content"||"-moz-fit-content"}>
-                            Learn more
-                        </Link>
+						<img src={item.icon} style={{ margin: "10px auto" }} />
+
+						<p wordBreak="break-word">{item.desc}</p>
+						<Link
+							href="#"
+							mx="auto"
+							p="0.5rem 1rem"
+							my="1rem"
+							d="block"
+							w={"fit-content" || "-moz-fit-content"}
+							border="1px"
+							borderRadius="3xl"
+							borderColor="gray.300"
+						>
+							Learn more
+						</Link>
 					</Box>
 				))}
 			</Flex>
