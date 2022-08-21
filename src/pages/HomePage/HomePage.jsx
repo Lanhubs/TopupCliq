@@ -2,6 +2,7 @@ import { Box, Container, VStack } from "@chakra-ui/react";
 import React from "react";
 
 import Header from "../../components/Header";
+import LandingPageWrappper from "../../components/LandingPageWrappper";
 import AnotherSection from "./AnotherSection";
 import Intro from "./Intro";
 import LearnMoreSection from "./LearnMoreSection";
@@ -11,19 +12,21 @@ import WhySection from "./WhySection";
 const HomePage = () => {
 	return (
 		<>
-		<Box>
-			<VStack>
+	
 
-			<Header />
+
+			<LandingPageWrappper>
+
+		
 			<Intro/>
 			<Partners/>
 			<WhySection/>
 			<AnotherSection/>
 			<LearnMoreSection/>
 			<Testimonialsection/>
-			</VStack>
-
-		</Box>
+			</LandingPageWrappper>
+			
+			
 		</>
 	);
 };

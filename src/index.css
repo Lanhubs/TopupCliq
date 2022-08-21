@@ -42,7 +42,7 @@
     @apply text-[#64748b];
    }
   .nav-right >.navlink:last-of-type{
-    @apply bg-[#253d95] text-[#fff] font-medium ml-2 ; 
+    @apply bg-[#253d95ac] text-[#fff] font-medium ml-2 ; 
     
   }
 } */
