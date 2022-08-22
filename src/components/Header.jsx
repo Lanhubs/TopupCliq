@@ -31,7 +31,7 @@ const Header = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	return (
 		<>
-			<Box w="100%" bg="white" boxShadow={"md"} px="20" py="10px">
+			<Box w="100%" bg="white"  px="20" py="10px">
 				<Flex flexDir="row" justifyContent="space-between">
 					<Box
 						style={{
@@ -56,7 +56,7 @@ const Header = () => {
 									<Link
 										_active={{ color: "#253d95" }}
 										key={i}
-										href="#"
+										href={item.link}
 										className="navlink"
 										_activeLink={{
 											color: "#253d95",
@@ -195,15 +195,15 @@ const dropDownItems = [
 
 const navLinks = [
 	{
-		link: "",
+		link: "/",
 		text: "Home",
 	},
 	{
-		link: "",
+		link: "/howitworks",
 		text: "How It Works",
 	},
 	{
-		link: "",
+		link: "/aboutus",
 		text: "About Us",
 	},
 	{

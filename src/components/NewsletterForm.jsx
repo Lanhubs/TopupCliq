@@ -1,12 +1,12 @@
 import { Button } from "@chakra-ui/button";
-import { Box, Container, FormLabel, Input, InputGroup, InputRightElement } from "@chakra-ui/react";
+import { Box, Container, FormLabel, Input, InputGroup, InputRightElement, Text } from "@chakra-ui/react";
 
 import React from "react";
 
 const NewsletterForm = () => {
 	return (
 		<Container py="10">
-			<h1>Sign up for latest updates</h1>
+			<Text style={{textAlign: "center", fontWeight: "bolder", fontSize: "larger"}}>Sign up for latest updates</Text>
 			<form style={{ marginTop: "1rem" }}>
 				<FormLabel>Email Address</FormLabel>
 				<InputGroup >
