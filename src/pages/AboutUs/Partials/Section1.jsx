@@ -1,6 +1,8 @@
 import { Box, Text } from "@chakra-ui/react";
 import React from "react";
 import aboutImg from "../../../assets/aboutImg.png";
+import aboutImg2 from "../../../assets/left-img.png";
+
 const Section1 = () => {
 	return (
 		<>
@@ -49,7 +51,7 @@ const Section1 = () => {
 				px="20"
 				py="10"
 			>
-				<img src={aboutImg} alt="" />
+				<img src={aboutImg2} alt="" />
 				<Box ml="1rem">
 					<Box w="80%" lineHeight="6">
 						<Text
