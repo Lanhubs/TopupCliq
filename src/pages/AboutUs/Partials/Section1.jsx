@@ -21,7 +21,7 @@ const Section1 = () => {
 						<Text
 							color="#263B95"
 							style={{ fontSize: 25 }}
-							fontsize="35px"
+							fontsize="32px"
 							fontWeight="bold"
 						>
 							Getting started

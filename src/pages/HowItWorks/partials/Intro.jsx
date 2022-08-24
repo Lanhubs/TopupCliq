@@ -6,7 +6,7 @@ const Intro = () => {
 		<Box w="full" px="20" py="10">
 			{/* <Box style={{display: "flex", justifyContent: "flex-start"}}> */}
 
-			<Text fontSize="25px" fontWeight="bold">
+			<Text fontSize="40px" fontWeight="bold">
 				HOW IT WORKS
 			</Text>
 			{/* </Box> */}
@@ -25,7 +25,7 @@ const Intro = () => {
 				backgroundRepeat="no-repeat"
 				w="full"
                 mt="1rem"
-				h="350px"
+				h="382px"
 				bgColor="#000"
 			>
 				<Text

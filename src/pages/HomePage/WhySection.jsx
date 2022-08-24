@@ -12,7 +12,6 @@ const WhySection = () => {
 					textAlign: "center",
 					fontSize: 32,
 					color: "#263B95",
-					
 				}}
 			>
 				Why use Top up connect?
@@ -57,14 +56,21 @@ const WhySection = () => {
 							</p>
 
 							<Link
-								border="1px "
-								borderColor="gray.400"
+								border="1px solid #E9EAEC "
 								display="block"
 								mt="12"
-								w="fit-content"
 								rounded="3xl"
 								href="#"
-								style={{ padding: "0.5rem 1rem", color: "#253d95" }}
+								style={{
+									padding: "0.5rem 1rem",
+									color: "#253d95",
+									gap: "10px",
+									width: i < 2 ? "140px" :  "209px",
+									height: "48px",
+									display: "flex",
+									justifyContent: "center",
+									alignItems: "center",
+								}}
 							>
 								{item.btnText}
 							</Link>

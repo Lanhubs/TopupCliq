@@ -20,24 +20,25 @@ const AnotherSection = () => {
 				borderColor="gray.300"
 			>
 				<Box width="45%">
-					<h1 style={{ color: "#253d95", fontSize: 25 }}>
+					<h1 style={{ color: "#253d95", fontSize: 32 }}>
 						Recharge card printing
 					</h1>
-					<p style={{ marginTop: 15}}>
+					<p style={{ marginTop: 15, fontSize: "16px"}}>
 						Get recharge card pins at discounted prices and Start your own
 						recharge card printing business today.
 					</p>
 					<Link
 						href=""
-						w="fit-content"
+						w="180px"
 						color="#fff"
 						bg="#253d95"
-						px="1rem"
-						fontSize="larger"
+						
+						h="56px"
+						fontSize="16px"
 						mt="20px"
-						style={{ marginTop: 20, display: "block", width: "fit-content" }}
+						style={{ marginTop: 20, display: "flex",alignItems: "center", justifyContent: "center"}}
 						py="0.6rem"
-						borderRadius="3xl"
+						borderRadius="50px"
 					>
 						Start printing
 					</Link>

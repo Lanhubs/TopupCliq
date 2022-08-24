@@ -12,40 +12,34 @@ import React from "react";
 const FaqsSection = () => {
 	return (
 		<>
-		<Box w="full" px="20">
-		<Text mt="20" fontWeight="bold" fontSize="3xl" textAlign="center">PRODUCT</Text >
+			<Box w="full" px="20">
+				<Text mt="20" fontWeight="800" fontSize="32px" textAlign="center">
+					PRODUCT
+				</Text>
 				<Accordion w="full" mt="10">
-
-
-			{faqsAccordionData.map((item, idx)=>(
-
-				<AccordionItem border="none">
-					{({ isExpanded }) => (
-						<>
-							<h2>
-								<AccordionButton>
-									<Box flex="1" textAlign="left">
-										{item.title}
-									</Box>
-									{isExpanded ? (
-										<MinusIcon fontSize="12px" />
-									) : (
-										<AddIcon fontSize="12px" />
-									)}
-								</AccordionButton>
-							</h2>
-							<AccordionPanel pb={4}>
-								{item.desc}
-							</AccordionPanel>
-						</>
-					)}
-				</AccordionItem>
-			))}
-
-
-
-			</Accordion>
-		</Box>
+					{faqsAccordionData.map((item, idx) => (
+						<AccordionItem borderTop="none" borderBottom="1px solid #E9EAEC">
+							{({ isExpanded }) => (
+								<>
+									<h2>
+										<AccordionButton>
+											<Box flex="1" textAlign="left">
+												{item.title}
+											</Box>
+											{isExpanded ? (
+												<MinusIcon fontSize="12px" />
+											) : (
+												<AddIcon fontSize="12px" />
+											)}
+										</AccordionButton>
+									</h2>
+									<AccordionPanel fontSize="16px" pb={4}>{item.desc}</AccordionPanel>
+								</>
+							)}
+						</AccordionItem>
+					))}
+				</Accordion>
+			</Box>
 		</>
 	);
 };

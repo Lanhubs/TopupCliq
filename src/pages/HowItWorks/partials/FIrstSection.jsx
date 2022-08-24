@@ -19,9 +19,29 @@ const FIrstSection = () => {
 						}}
 						p="1rem"
 					>
-						<Image src={item.icon} alt="" w="70px" h="70px" />
-						<Link style={{ color: "#263B95", display: "block", textDecoration: "none",  }} fontWeight="bold" fontSize="larger"  my="1rem">{item.header}</Link>
-						<Text color="gray.600">{item.desc}</Text>
+						<Image src={item.icon} alt="" w="83px" h="83px" />
+						<Link
+							style={{
+								color: "#263B95",
+								display: "block",
+								textDecoration: "none",
+							}}
+							fontWeight="bold"
+							fontSize="24px"
+							my="1rem"
+						>
+							{item.header}
+						</Link>
+						<Text color="gray.600" fontSize="16px">
+							{item.desc}
+							{idx === 1 ? (
+								<Link href="#"  textDecoration="none" color="#263B95">
+									See T & C’s
+								</Link>
+							) : (
+								""
+							)}
+						</Text>
 					</Box>
 				))}
 			</Box>
@@ -34,17 +54,17 @@ const data = [
 	{
 		icon: registerIcon,
 		header: "Register",
-		desc: "You can make extra cash with referral bonuses when you invite a friend to TopupBox CONNECT.   See T’s & C’s ",
+		desc: "You can make extra cash with referral bonuses when you invite a friend to TopupBox CONNECT.  ",
 	},
 	{
 		icon: InviteIcon,
 		header: "Invite friends with  link/code",
-		desc: "You can make extra cash with referral bonuses when you invite a friend to TopupBox CONNECT.   See T’s & C’s  ",
+		desc: "You can make extra cash with referral bonuses when you invite a friend to TopupBox CONNECT.   ",
 	},
 	{
 		icon: Earnicon,
 		header: "Earn money from referrals",
-		desc: "You can make extra cash with referral bonuses when you invite a friend to TopupBox CONNECT.   See T’s & C’s  ",
+		desc: "You can make extra cash with referral bonuses when you invite a friend to TopupBox CONNECT.    ",
 	},
 ];
 export default FIrstSection

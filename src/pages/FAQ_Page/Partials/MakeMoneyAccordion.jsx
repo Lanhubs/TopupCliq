@@ -13,10 +13,16 @@ const MakeMoneyAccordion = () => {
 	return (
 		<>
 			<Box px="20" w="full">
-            <Text mt="20" fontWeight="bold" fontSize="3xl" textAlign="center">MAKING MONEY</Text >
+				<Text mt="20" fontWeight="800" fontSize="32px" textAlign="center">
+					MAKING MONEY
+				</Text>
 				<Accordion w="full" mt="10">
 					{accordionData.map((item, idx) => (
-						<AccordionItem border="none">
+						<AccordionItem
+							borderTop="none"
+							borderBottom="1px solid #E9EAEC"
+							bg="#fff"
+						>
 							{({ isExpanded }) => (
 								<>
 									<h2>
@@ -31,7 +37,9 @@ const MakeMoneyAccordion = () => {
 											)}
 										</AccordionButton>
 									</h2>
-									<AccordionPanel pb={4}>{item.desc}</AccordionPanel>
+									<AccordionPanel fontSize="16px" pb={4}>
+										{item.desc}
+									</AccordionPanel>
 								</>
 							)}
 						</AccordionItem>

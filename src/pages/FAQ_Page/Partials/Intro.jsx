@@ -6,7 +6,7 @@ const Intro = () => {
 		<Box w="full" px="20" py="10">
 			{/* <Box style={{display: "flex", justifyContent: "flex-start"}}> */}
 
-			<Text fontSize="25px" fontWeight="bold">
+			<Text fontSize="40px" fontWeight="bold">
 				FREQUENTLY ASKED QUESTIONS
 			</Text>
 			<Box
@@ -21,11 +21,11 @@ const Intro = () => {
 					displlay: "block",
 				}}
 			>
-				<Text>FAQ</Text>
-				<Text mt="" style={{ fontSize: "56px", fontWeight: "bold" }}>
+				<Text fontSize="18px" >FAQS</Text>
+				<Text mt="" style={{ fontSize: "56px", fontWeight: "800" }}>
 					Top up connect Answers
 				</Text>
-				<Text style={{ fontWeight: "", fontSize: "18px"}} w="45%">
+				<Text style={{ fontWeight: "400", fontSize: "18px"}} w="428.98px">
 					TopupBox connect has changed the lives of business owners, but people
 					still wonder, “What is TopBox connect?” We’re here to tell you this
 					and more.

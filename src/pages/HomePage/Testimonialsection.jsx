@@ -8,7 +8,7 @@ const Testimonialsection = () => {
 		<Box
 			style={{
 				backgroundImage:
-					"linear-gradient(to bottom, rgb(214, 255, 212) 50%, #fff )",
+					"linear-gradient(to bottom, rgba(33, 173, 227, 0.05) 70%, #fff )",
 			}}
 			w="full"
 			py="1rem"
@@ -17,7 +17,7 @@ const Testimonialsection = () => {
 				style={{
 					textAlign: "center",
 					textTransform: "uppercase",
-					textAlign: "center",
+					
 				}}
 			>
 				Testimonials
@@ -26,7 +26,7 @@ const Testimonialsection = () => {
 				Feedback from users
 			</h1>
 			<Box w="full" my="10">
-				<Box w="full" >
+				<Box w="full">
 					<Box
 						style={{
 							display: "flex" || "flexbox" || "-ms-flexbox",
@@ -36,30 +36,29 @@ const Testimonialsection = () => {
 							justifyContent: "center",
 							width: "100%",
 							position: "relative",
-							overflowX:"auto",
+							overflowX: "auto",
 						}}
-				
 						flexShrink="none"
 					>
 						{reviews.map((item, idx) => (
 							<Box
 								key={idx}
 								style={{
-									// display: "inline-block",
-									// float: "right",
-									// marginRight: "24px",
+									
 									display: "flex",
 									flexDirection: "column",
 									alignItems: "space-between",
 									flexShrink: 10,
+									gap: 32,
 									background: "#fff",
 									borderRadius: "10px",
-									padding: "10px",
+									padding: "20px",
 									width: "312px",
 									height: "194px",
+									boxShadow: "0px 10px 20px rgba(33, 35, 55, 0.02)",
 								}}
 							>
-								<Text lineHeight="5" color="#212337">
+								<Text lineHeight="5" color="#212337" fontSize="16px">
 									<span style={{ fontSize: "24px", color: "#253d95" }}>"</span>
 									{item.comment}
 									<span style={{ fontSize: "24px", color: "#253d95" }}>"</span>

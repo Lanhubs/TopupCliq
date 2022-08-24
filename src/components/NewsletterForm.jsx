@@ -1,31 +1,44 @@
 import { Button } from "@chakra-ui/button";
-import { Box, Container, FormLabel, Input, InputGroup, InputRightElement, Text } from "@chakra-ui/react";
+import {
+	Box,
+	Container,
+	FormLabel,
+	Input,
+	InputGroup,
+	InputRightElement,
+	Text,
+} from "@chakra-ui/react";
 
 import React from "react";
 
 const NewsletterForm = () => {
 	return (
 		<Container py="10">
-			<Text style={{textAlign: "center", fontWeight: "bolder", fontSize: "larger"}}>Sign up for latest updates</Text>
-			<form style={{ marginTop: "1rem" }}>
+			<Text
+				style={{ textAlign: "center", fontWeight: "bolder", fontSize: "32px" }}
+			>
+				Sign up for latest updates
+			</Text>
+			<form style={{ marginTop: "1.5rem", marginBottom: "1.5rem" }}>
 				<FormLabel>Email Address</FormLabel>
-				<InputGroup >
+				<InputGroup style={{display: "flex", gap: 10, alignItems: "center"}}>
 					<Input
 						type="email"
 						placeholder="jondoe@gmail.com"
 						border="none"
+						height="60px"
 						borderRadius="none"
 						mr="0.5rem"
-						borderBottom="2px solid #253d95"
+						borderBottom="1px solid #253d95"
 					/>
 					{/* <InputRightElement> */}
 					<Button
 						bgColor="#253d95"
-						borderRadius="3xl"
-                        width="200px"
-						style={{ padding: "0.5rem 1rem", fontWeight: "lighter" }}
+						borderRadius="50px"
+						width="165px"
+						height="60px"
+						style={{ textAlign: "center", fontWeight: "lighter" }}
 						color="#fff"
-
 					>
 						Subscribe
 					</Button>

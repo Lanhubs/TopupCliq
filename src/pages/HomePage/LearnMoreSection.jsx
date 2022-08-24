@@ -1,4 +1,4 @@
-import { Box, Flex, Link } from "@chakra-ui/react";
+import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import React from "react";
 import commentIcon from "../../assets/learmmore/comment.png";
 import rocketIcon from "../../assets/learmmore/rocket.png";
@@ -24,7 +24,7 @@ const LearnMoreSection = () => {
 					>
 						<img src={item.icon} style={{ margin: "10px auto" }} />
 
-						<p wordBreak="break-word">{item.desc}</p>
+						<Text wordBreak="break-word" fontSize="16px">{item.desc}</Text>
 						<Link
 							href="#"
 							mx="auto"

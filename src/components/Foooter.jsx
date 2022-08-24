@@ -1,4 +1,4 @@
-import TopUpLogo from "../assets/Logo.png";
+import TopUpLogo from "../assets/Icons/Logo.png";
 import {
 	Box,
 	Container,
@@ -100,7 +100,13 @@ export default function Footer() {
 					))}
 				</HStack>
 			</Box>
-			<Box w="full" textAlign="center" py="1.5rem" borderTop="1.5px solid" borderColor="gray.600">
+			<Box
+				w="full"
+				textAlign="center"
+				py="1.5rem"
+				borderTop="1px solid rgba(255, 255, 255, 0.2)"
+				
+			>
 				<Text>&copy; 2022 Top up connect. All rights reserved</Text>
 			</Box>
 		</Box>

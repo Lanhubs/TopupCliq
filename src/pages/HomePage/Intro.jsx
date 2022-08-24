@@ -6,7 +6,7 @@ const Intro = () => {
 		<Box
 			style={{
 				top: 0,
-				
+				backgroundImage: `linear-gradient(to bottom left, rgba(34, 173, 128, 0.063) 16.19%, #fff 73.81%`,
 				// background:
 				// 	"linear-gradient(44.35deg, rgba(172, 232, 255, 0.21) 16.19%, rgba(38, 59, 149, 0.0462) 163.62%)",
 				display: "flex",

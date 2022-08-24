@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../index.css";
 
-import Logo from "../assets/Logo.png"
+import Logo from "../assets/Icons/Logo.png";
 import { FaBars, FaAngleDown } from "react-icons/fa";
 
 import {
@@ -30,21 +30,27 @@ const Header = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	return (
 		<>
-			<Box w="100%" bg="white" px="20" >
-				<Box d="flex"
+			<Box w="100%" bg="white" px="20" pt="10px">
+				<Box
+					d="flex"
 					display="flex"
 					gap="108px"
 					justifyContent="space-between"
 					alignItems="center"
-					style={{display: "flex", alignItems: "center", justifyContent: "space-between", gap: "108px"}}
+					style={{
+						display: "flex",
+						alignItems: "center",
+						justifyContent: "space-between",
+						gap: "108px",
+					}}
 				>
 					<Box
 						style={{
-							display:"flex",
-							alignItems: "center"
+							display: "flex",
+							alignItems: "center",
 						}}
 					>
-						<img src={Logo} style={{width:"165px", height:"48px"}} alt="" />
+						<img src={Logo} style={{ width: "165px", height: "48px" }} alt="" />
 					</Box>
 
 					<Box w="75%">
@@ -57,7 +63,6 @@ const Header = () => {
 							<Box d="flex" flexDir="row">
 								{navLinks.map((item, i) => (
 									<Link
-										_active={{ color: "#253d95" }}
 										key={i}
 										href={item.link}
 										className="navlink"
@@ -68,7 +73,7 @@ const Header = () => {
 										style={{
 											fontSize: "16px",
 											textDecoration: "none",
-											color: "grey",
+											color: "#212337",
 										}}
 									>
 										{item.text}
@@ -89,8 +94,8 @@ const Header = () => {
 									borderColor="slategray"
 									height="48px"
 									width="148px"
-									color="#212337;
-"
+									color="#212337"
+									href="/login"
 									textDecoration="none"
 									_active={{
 										background: "#253d95",
@@ -105,6 +110,7 @@ const Header = () => {
 									Log in
 								</Link>
 								<Link
+									href="/register"
 									textDecoration="none"
 									height="48px"
 									width="148px"
@@ -229,5 +235,4 @@ const navLinks = [
 		link: "/faq",
 		text: "FAQ",
 	},
-	
 ];
