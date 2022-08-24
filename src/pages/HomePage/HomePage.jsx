@@ -12,21 +12,22 @@ import WhySection from "./WhySection";
 const HomePage = () => {
 	return (
 		<>
-	
-
-
-			<LandingPageWrappper>
-
-		
-			<Intro/>
-			<Partners/>
-			<WhySection/>
-			<AnotherSection/>
-			<LearnMoreSection/>
-			<Testimonialsection/>
-			</LandingPageWrappper>
-			
-			
+			<Box
+				w="full"
+				h="full"
+				style={{
+					backgroundImage: `linear-gradient(to bottom left, rgba(34, 173, 128, 0.063) 16.19%, rgba(34, 173, 128, 0.21) 163.62%)`,
+				}}
+			>
+				<LandingPageWrappper>
+					<Intro />
+					<Partners />
+					<WhySection />
+					<AnotherSection />
+					<LearnMoreSection />
+					<Testimonialsection />
+				</LandingPageWrappper>
+			</Box>
 		</>
 	);
 };

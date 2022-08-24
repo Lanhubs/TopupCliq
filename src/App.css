@@ -1,12 +1,12 @@
 @font-face {
-	font-family: 'Open sans';
-	src: url("./assets/OpenSans-Regular.ttf");
+	font-family: 'Lato';
+	src: url("./assets/Lato-Black.ttf");
 }
 
 
 
 :root {
-	font-family: 'Open sans';
+	font-family: "Lato";
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;

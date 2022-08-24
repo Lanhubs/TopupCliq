@@ -10,10 +10,10 @@ const LearnMoreSection = () => {
 				{content.map((item, i) => (
 					<Box
 						key={i}
-						p="1.5rem 2rem"
+						p="1.5rem 2.5rem"
 						textAlign="center"
 						style={{
-							border: "0.1rem solid rgb(153, 149, 149)",
+							border: "0.1rem solid #E9EAEC",
 							width: "100%",
 							display: "flex",
 							justifyContent: "space-between",
@@ -34,7 +34,7 @@ const LearnMoreSection = () => {
 							w={"fit-content" || "-moz-fit-content"}
 							border="1px"
 							borderRadius="3xl"
-							borderColor="gray.300"
+							borderColor="#E9EAEC"
 						>
 							Learn more
 						</Link>

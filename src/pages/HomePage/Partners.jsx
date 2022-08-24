@@ -10,7 +10,7 @@ import Smile from "../../assets/Partners icons/Smile.png";
 const Partners = () => {
 	return (
 		<Box>
-			<h1 style={{ textAlign: "center", letterSpacing: 1 }}>OUR PARTNERS</h1>
+			<h1 style={{ textAlign: "center",fontSize: 18, fontWeight: "normal", letterSpacing: 1 }}>OUR PARTNERS</h1>
 			<HStack spacing="24" mt="10">
 				{partners.map((item, i) => (
 					<Link href="" key={i} mt="2">

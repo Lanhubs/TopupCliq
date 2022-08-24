@@ -12,10 +12,9 @@ import React from "react";
 const FaqsSection = () => {
 	return (
 		<>
-			<Text>PRODUCTS</Text>
-		<Box px="20" w="full" >
-
-			<Accordion w="full">
+		<Box w="full" px="20">
+		<Text mt="20" fontWeight="bold" fontSize="3xl" textAlign="center">PRODUCT</Text >
+				<Accordion w="full" mt="10">
 
 
 			{faqsAccordionData.map((item, idx)=>(

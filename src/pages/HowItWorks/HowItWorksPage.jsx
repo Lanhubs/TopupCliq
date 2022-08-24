@@ -11,9 +11,11 @@ const HowItWorksPage = () => {
         <Intro/>
         <FIrstSection/>
         <LearnMoreSection/>
-        <NewsletterForm/>
     </LandingPageWrappper>
   )
 }
 
 export default HowItWorksPage
+
+
+

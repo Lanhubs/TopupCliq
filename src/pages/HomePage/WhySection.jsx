@@ -10,9 +10,9 @@ const WhySection = () => {
 			<h1
 				style={{
 					textAlign: "center",
-					fontSize: 30,
-					color: "#253d95",
-					letterSpacing: 1,
+					fontSize: 32,
+					color: "#263B95",
+					
 				}}
 			>
 				Why use Top up connect?
@@ -36,7 +36,14 @@ const WhySection = () => {
 						bg="white"
 					>
 						<img src={item.image} style={{ width: "100%", marginTop: 0 }} />
-						<Box p="15px" style={{display: "flex"||"-ms-flexbox", flexDirection: "column", justifyContent:"space-between"}}>
+						<Box
+							p="15px"
+							style={{
+								display: "flex" || "-ms-flexbox",
+								flexDirection: "column",
+								justifyContent: "space-between",
+							}}
+						>
 							<h2
 								style={{
 									fontSize: 20,

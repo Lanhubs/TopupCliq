@@ -12,7 +12,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-		<div className="w-full p-0 m-0">
+		<div className="w-full p-0 m-0 bg-white">
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<HomePage />} exact />

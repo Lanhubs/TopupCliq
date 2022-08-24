@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import { Link, NavLink } from "react-router-dom";
 import "../index.css";
 
 import Logo from "../assets/Logo.png"
@@ -31,17 +30,21 @@ const Header = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	return (
 		<>
-			<Box w="100%" bg="white"  px="20" py="10px">
-				<Flex flexDir="row" justifyContent="space-between">
+			<Box w="100%" bg="white" px="20" >
+				<Box d="flex"
+					display="flex"
+					gap="108px"
+					justifyContent="space-between"
+					alignItems="center"
+					style={{display: "flex", alignItems: "center", justifyContent: "space-between", gap: "108px"}}
+				>
 					<Box
 						style={{
-							img: {
-								marginTop: "auto",
-							},
+							display:"flex",
+							alignItems: "center"
 						}}
 					>
-						<img src={Logo} style={{ float: "left" }} alt="" />
-						
+						<img src={Logo} style={{width:"165px", height:"48px"}} alt="" />
 					</Box>
 
 					<Box w="75%">
@@ -59,12 +62,13 @@ const Header = () => {
 										href={item.link}
 										className="navlink"
 										_activeLink={{
-											color: "#253d95",
+											color: "#212337",
 										}}
 										textDecoration="none"
 										style={{
+											fontSize: "16px",
 											textDecoration: "none",
-											color: "grey"
+											color: "grey",
 										}}
 									>
 										{item.text}
@@ -76,34 +80,48 @@ const Header = () => {
 								<Link
 									px="1.5em"
 									py="0.5em"
-									fontSize={"medium"}
+									lineHeight="19px"
+									fontSize={"16px"}
+									fontWeight="500"
 									className="navlink-right"
 									borderRadius="2xl"
 									borderWidth={"1.5px"}
 									borderColor="slategray"
-									color="GrayText"
+									height="48px"
+									width="148px"
+									color="#212337;
+"
 									textDecoration="none"
-									_active={{ background: "#253d95", color: "#fff",  border: "none"}}
+									_active={{
+										background: "#253d95",
+										color: "#fff",
+										border: "none",
+									}}
 									style={{
 										textDecoration: "none",
+										border: "1.5px solid  #E9EAEC ",
 									}}
 								>
 									Log in
 								</Link>
 								<Link
 									textDecoration="none"
+									height="48px"
+									width="148px"
+									fontWeight="500"
 									px="1.5em"
 									py="0.5rem"
-									fontSize="medium"
+									fontSize="16px"
 									mx="10px"
 									color="white"
-									bg="#253d95"
+									bg="#263B95"
 									borderRadius={"2xl"}
 									_active={{
 										background: "none",
-										border: "1.5px solid  slategray ",
 
-										color: "slategray",
+										border: "1.5px solid  #E9EAEC ",
+
+										color: "#fff",
 									}}
 									style={{
 										textDecoration: "none",
@@ -121,7 +139,7 @@ const Header = () => {
 						display={{ md: "none" }}
 						onClick={isOpen ? onClose : onOpen}
 					/>
-				</Flex>
+				</Box>
 			</Box>
 		</>
 	);
@@ -142,6 +160,7 @@ function Dropdown() {
 				_hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
 				aria-label="Courses"
 				fontWeight="normal"
+				color="#212337"
 				onMouseEnter={onOpen}
 				onMouseLeave={onClose}
 			>
