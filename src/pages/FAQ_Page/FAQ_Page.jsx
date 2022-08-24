@@ -1,10 +1,14 @@
 import React from 'react'
+import LandingPageWrappper from '../../components/LandingPageWrappper'
+import FaqsSection from './Partials/FaqsSection'
+import Intro from './Partials/Intro'
 
 const FAQ_Page = () => {
   return (
-    <Box>
-        
-    </Box>
+    <LandingPageWrappper>
+      <Intro/>
+      <FaqsSection/>
+    </LandingPageWrappper>
   )
 }
 

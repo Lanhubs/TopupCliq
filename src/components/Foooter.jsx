@@ -100,7 +100,7 @@ export default function Footer() {
 					))}
 				</HStack>
 			</Box>
-			<Box w="full" textAlign="center" py="1.5rem" borderTop="1.5px solid #f3f3f3">
+			<Box w="full" textAlign="center" py="1.5rem" borderTop="1.5px solid" borderColor="gray.600">
 				<Text>&copy; 2022 Top up connect. All rights reserved</Text>
 			</Box>
 		</Box>

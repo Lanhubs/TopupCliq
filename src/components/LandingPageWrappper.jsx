@@ -11,7 +11,7 @@ const LandingPageWrappper = ({children}) => {
 
         <Header/>
         {children}
-      
+        <NewsletterForm/>
         <Footer/>
         </VStack>
     </Box>

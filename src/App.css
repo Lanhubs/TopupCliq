@@ -27,6 +27,10 @@ body {
 	height: 100vh;
 	
 }
+.root{
+	width: inherit;
+	height: inherit;
+}
 
 .navlink{
 	padding: 7px 10px;

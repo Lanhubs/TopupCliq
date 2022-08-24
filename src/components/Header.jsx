@@ -145,7 +145,7 @@ function Dropdown() {
 				onMouseEnter={onOpen}
 				onMouseLeave={onClose}
 			>
-				More {isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
+				More Options {isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
 			</MenuButton>
 			<MenuList
 				onMouseEnter={onOpen}
@@ -207,11 +207,8 @@ const navLinks = [
 		text: "About Us",
 	},
 	{
-		link: "",
+		link: "/faq",
 		text: "FAQ",
 	},
-	{
-		link: "",
-		text: "Home",
-	},
+	
 ];
