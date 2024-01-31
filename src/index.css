@@ -1,0 +1,48 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+  .header-nav{
+    @apply w-full bg-white shadow;
+
+  }
+  .header{
+    @apply flex justify-between px-10;
+
+  }
+  .navlinks{
+    @apply flex items-center p-0;
+  }
+  .logo{
+    @apply flex items-center;
+  }
+  .navlink{
+    @apply px-3 py-1; 
+  }
+  .nav-right{
+    @apply ml-7 tracking-normal;
+
+  }
+
+  
+
+}
+
+
+
+
+@layer base{
+  .nav-right >.navlink{
+    @apply  py-1.5 px-5 border border-[#64748b] rounded-2xl ;
+
+  }
+   .nav-right >.navlink:first-of-type{
+    @apply text-[#64748b];
+   }
+  .nav-right >.navlink:last-of-type{
+    @apply bg-[#253d95ac] text-[#fff] font-medium ml-2 ; 
+    
+  }
+} */
